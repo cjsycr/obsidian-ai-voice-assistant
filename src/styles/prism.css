@@ -1,0 +1,60 @@
+/* ===== 代码块语法高亮兜底（Obsidian Prism token 类） ===== */
+.ai-msg-body pre {
+  position: relative;
+  padding-right: 34px; /* 让位给复制按钮 */
+}
+.ai-msg-body pre code .token.comment,
+.ai-msg-body pre code .token.prolog,
+.ai-msg-body pre code .token.doctype,
+.ai-msg-body pre code .token.cdata { color: #8a8a8a; font-style: italic; }
+.ai-msg-body pre code .token.punctuation { color: var(--text-muted); }
+.ai-msg-body pre code .token.property,
+.ai-msg-body pre code .token.tag,
+.ai-msg-body pre code .token.boolean,
+.ai-msg-body pre code .token.number,
+.ai-msg-body pre code .token.constant,
+.ai-msg-body pre code .token.symbol,
+.ai-msg-body pre code .token.deleted { color: #d97706; }
+.ai-msg-body pre code .token.selector,
+.ai-msg-body pre code .token.attr-name,
+.ai-msg-body pre code .token.string,
+.ai-msg-body pre code .token.char,
+.ai-msg-body pre code .token.builtin,
+.ai-msg-body pre code .token.inserted { color: var(--ai-teal); }
+.ai-msg-body pre code .token.operator,
+.ai-msg-body pre code .token.entity,
+.ai-msg-body pre code .token.url { color: #0369a1; }
+.ai-msg-body pre code .token.atrule,
+.ai-msg-body pre code .token.attr-value,
+.ai-msg-body pre code .token.keyword { color: #7c3aed; font-weight: 500; }
+.ai-msg-body pre code .token.function,
+.ai-msg-body pre code .token.class-name { color: #db2777; }
+.ai-msg-body pre code .token.regex,
+.ai-msg-body pre code .token.important,
+.ai-msg-body pre code .token.variable { color: #ea580c; }
+/* 深色模式适配 */
+.theme-dark .ai-msg-body pre code .token.property,
+.theme-dark .ai-msg-body pre code .token.tag,
+.theme-dark .ai-msg-body pre code .token.number,
+.theme-dark .ai-msg-body pre code .token.boolean,
+body.theme-dark .ai-msg-body pre code .token.property,
+body.theme-dark .ai-msg-body pre code .token.tag,
+body.theme-dark .ai-msg-body pre code .token.number,
+body.theme-dark .ai-msg-body pre code .token.boolean { color: #fbbf24; }
+.theme-dark .ai-msg-body pre code .token.selector,
+.theme-dark .ai-msg-body pre code .token.attr-name,
+.theme-dark .ai-msg-body pre code .token.string,
+.theme-dark .ai-msg-body pre code .token.builtin,
+body.theme-dark .ai-msg-body pre code .token.selector,
+body.theme-dark .ai-msg-body pre code .token.attr-name,
+body.theme-dark .ai-msg-body pre code .token.string,
+body.theme-dark .ai-msg-body pre code .token.builtin { color: #5eead4; }
+.theme-dark .ai-msg-body pre code .token.keyword,
+body.theme-dark .ai-msg-body pre code .token.keyword { color: #c084fc; }
+.theme-dark .ai-msg-body pre code .token.function,
+.theme-dark .ai-msg-body pre code .token.class-name,
+body.theme-dark .ai-msg-body pre code .token.function,
+body.theme-dark .ai-msg-body pre code .token.class-name { color: #f472b6; }
+.theme-dark .ai-msg-body pre code .token.operator,
+body.theme-dark .ai-msg-body pre code .token.operator { color: #7dd3fc; }
+

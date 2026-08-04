@@ -1,0 +1,23 @@
+[
+  { "trigger": "summarize",     "name": "总结要点",         "description": "概括当前笔记核心内容",         "prompt": "请总结当前笔记的核心内容，用简洁的语言，不超过 200 字。",                                                       "icon": "file-text",     "category": "笔记" },
+  { "trigger": "outline",       "name": "生成大纲",         "description": "从内容生成层级大纲",           "prompt": "请为当前笔记生成一个清晰的层级大纲（Markdown 格式）。",                                                        "icon": "list-tree",     "category": "笔记" },
+  { "trigger": "key-points",    "name": "提取要点",         "description": "列出 5-8 条核心要点",         "prompt": "请从当前笔记中提取 5-8 条核心要点，用无序列表呈现。",                                                            "icon": "list",          "category": "笔记" },
+  { "trigger": "tags",          "name": "推荐标签",         "description": "给笔记推荐 obsidian 标签",     "prompt": "请根据当前笔记内容，推荐 3-6 个合适的 Obsidian 标签（#tag 格式），并简要说明每个标签的用途。",                    "icon": "tag",           "category": "笔记" },
+  { "trigger": "backlinks",     "name": "推荐关联笔记",     "description": "找出可能相关的其他主题",       "prompt": "根据当前笔记，请列出 5 个可能相关的主题/知识点（写成 [[wikilink]] 格式），供我建立双向链接。",                    "icon": "link",          "category": "笔记" },
+
+  { "trigger": "translate-cn",  "name": "翻译成中文",       "description": "翻译为流畅中文",               "prompt": "请把当前笔记翻译成流畅自然的中文，保持原文的段落结构。",                                                        "icon": "languages",     "category": "翻译" },
+  { "trigger": "translate-en",  "name": "翻译成英文",       "description": "翻译为流畅英文",               "prompt": "请把当前笔记翻译成流畅的英文，保持原文的段落结构。",                                                            "icon": "languages",     "category": "翻译" },
+  { "trigger": "polish",        "name": "润色文字",         "description": "改进表达 · 保留原意",          "prompt": "请润色当前笔记的表达，让语言更精炼、逻辑更清晰，但保留原意，不要改变结构。",                                    "icon": "sparkles",      "category": "翻译" },
+
+  { "trigger": "continue",      "name": "续写",             "description": "沿风格思路继续写一段",         "prompt": "请沿着当前笔记的风格和思路，继续往下写一段（约 150-300 字）。",                                                  "icon": "pen-tool",      "category": "创作" },
+  { "trigger": "rewrite",       "name": "换个说法",         "description": "同样意思换一种表达",           "prompt": "请把当前笔记的内容换一种说法/风格重写，保持信息量不变。",                                                        "icon": "refresh-cw",    "category": "创作" },
+  { "trigger": "questions",     "name": "反思问题",         "description": "提出激发思考的问题",           "prompt": "针对当前笔记，请提出 5 个能激发深度思考的问题，帮助我进一步深入。",                                              "icon": "help-circle",   "category": "创作" },
+  { "trigger": "critique",      "name": "批判性分析",       "description": "找出观点漏洞或改进点",         "prompt": "请对当前笔记做批判性分析：指出可能存在的观点漏洞、逻辑跳跃、或需要补充证据的地方。",                            "icon": "search",        "category": "创作" },
+
+  { "trigger": "mermaid",       "name": "生成 Mermaid 图",  "description": "画流程/思维/关系图",           "prompt": "请根据当前笔记的内容，生成一个 Mermaid 图（flowchart / mindmap / sequenceDiagram 选合适的），帮助理解结构。放在代码块里。", "icon": "workflow", "category": "技术" },
+  { "trigger": "table",         "name": "整理成表格",       "description": "把内容整理为 Markdown 表格",  "prompt": "请把当前笔记中适合表格化的内容整理成 Markdown 表格。",                                                            "icon": "table",         "category": "技术" },
+  { "trigger": "code-review",   "name": "代码 Review",      "description": "审查笔记中的代码块",           "prompt": "请审查当前笔记中的代码块，指出潜在问题、性能改进点、更好的写法。",                                                "icon": "code",          "category": "技术" },
+  { "trigger": "explain-code",  "name": "解释代码",         "description": "逐行讲解笔记里的代码",         "prompt": "请逐行解释当前笔记中的代码，说明每部分的作用。",                                                                "icon": "book-open",     "category": "技术" },
+
+  { "trigger": "ask",           "name": "自由提问",         "description": "清空输入框，我自己写",         "prompt": "",                                                                                                          "icon": "message-circle","category": "通用" }
+]

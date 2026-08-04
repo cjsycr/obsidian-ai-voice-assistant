@@ -1,0 +1,11 @@
+node_modules/
+main.js
+*.log
+.DS_Store
+.idea/
+.vscode/
+metafile.json
+# Release artifacts
+obsidian-ai-whispers.zip
+release-notes.md
+styles.css
